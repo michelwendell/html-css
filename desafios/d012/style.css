@@ -47,13 +47,50 @@ header a:hover {
 
 section {
     font-family: var(--fonte-cordel);
-    font-size: 3ex;
+    font-size: 5ex;
+    line-height: 5ex;
 }
 
-section#normal {
+section.normal {
     background-color: white;
+    padding: 30px;
 }
 
-section#imagem {
-    background-color: lightslategray;
+section.imagem {
+    background-size: cover;
+    color: white;
+    padding: 30px;
+}
+
+section.imagem p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+section#img01 {
+    background: grey url("imagens/background001.jpg") center center no-repeat fixed;
+}
+
+section#img02 {
+    background: grey url("imagens/background002.jpg") center center no-repeat fixed;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    font-family: var(--fonte-padrao);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
