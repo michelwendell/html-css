@@ -6,74 +6,93 @@
 :root {
     --fonte-titulo: 'Passion One', cursive;
     --fonte-cordel: 'Sriracha', cursive;
-    --fonte-padrao: Arial, sans-serif;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    font-family: var(--fonte-padrao);
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
-    height: 300px;
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 header h1 {
     font-family: var(--fonte-titulo);
-    font-size: 20ex;
-    font-weight: normal;
+    font-size: 10vw;
+    font-variant: small-caps;
     padding-top: 50px;
-    text-align: center;
+
 }
 
 header h2 {
-    font-family: var(--fonte-padrao);
-    font-size: 3ex;
+    font-size: 1em;
     font-weight: lighter;
-    text-align: center;
+    padding-bottom: 50px;
 }
 
-header a {
+a {
     text-decoration: none;
     font-family: var(--fonte-titulo);
     color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
     font-family: var(--fonte-cordel);
-    font-size: 5ex;
-    line-height: 5ex;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
     background-color: white;
-    padding: 30px;
+    color: black;
+
 }
 
 section.imagem {
-    background-size: cover;
+    background-color: rgb(51, 51, 51);
     color: white;
-    padding: 30px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 section.imagem p {
     display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img01 {
-    background: grey url("imagens/background001.jpg") center center no-repeat fixed;
+    background: grey url("../imagens/background001.jpg") right center no-repeat fixed;
+    background-size: cover;
 }
 
 section#img02 {
-    background: grey url("imagens/background002.jpg") center center no-repeat fixed;
+    background: grey url("../imagens/background002.jpg") center center no-repeat fixed;
+    background-size: cover;
 }
 
 footer {
@@ -81,16 +100,5 @@ footer {
     color: white;
     height: 25px;
     text-align: center;
-    padding: 5px;
-    font-family: var(--fonte-padrao);
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    padding: 10px;
 }
